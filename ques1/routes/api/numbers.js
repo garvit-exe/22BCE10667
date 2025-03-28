@@ -21,10 +21,12 @@ router.get("/:numberid", (req, res) => {
             r.numbers = r.windowCurrState;
 
             const sum = 0;
+            const count = 0;
             r.numbers.forEach((num) => {
                 sum = sum + num;
+                count += 1;
             });
-            r.avg = sum;
+            r.avg = sum / count ? sum / count : 0.0;
         });
 
         res.json(response);
