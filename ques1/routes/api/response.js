@@ -1,4 +1,4 @@
-[
+const response = [
     {
         windowPrevState: [],
         windowCurrState: [],
